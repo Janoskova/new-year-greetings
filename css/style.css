@@ -1,0 +1,99 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Qwitcher Grypen", cursive;
+}
+
+.introduction {
+  min-height: 100vh;
+  background-image: url(../images/fireworks.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  -webkit-animation: zoom 20s infinite alternate linear;
+          animation: zoom 20s infinite alternate linear;
+}
+@-webkit-keyframes zoom {
+  0% {
+    background-size: 120% 120%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+@keyframes zoom {
+  0% {
+    background-size: 120% 120%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+.introduction__text {
+  font-size: 50px;
+  margin: 0;
+}
+.introduction__link {
+  text-decoration: none;
+  color: white;
+}
+.introduction__link:hover {
+  color: #f5cd4f;
+}
+.introduction__box {
+  background-color: rgba(0, 0, 0, 0.448);
+  height: 240px;
+  width: 240px;
+  margin: 40px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+.introduction__box:hover {
+  border: 1px solid #f5cd4f;
+  box-shadow: 0 0 1rem #f5cd4f;
+  transform: scale(1.1);
+}
+.introduction__year {
+  font-size: 46px;
+}
+@media screen and (min-width: 640px) {
+  .introduction {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .introduction__text {
+    flex-basis: 100%;
+    font-size: 60px;
+  }
+  .introduction__box {
+    margin: 40px 40px 0 40px;
+  }
+  .introduction__year {
+    font-size: 60px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .introduction__text {
+    font-size: 70px;
+    margin-top: 40px;
+  }
+  .introduction__year {
+    font-size: 60px;
+  }
+}/*# sourceMappingURL=style.css.map */

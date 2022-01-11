@@ -1,0 +1,88 @@
+@use 'base/typograpghy';
+
+.introduction {
+  min-height: 100vh;
+  background-image: url(../images/fireworks.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding: typograpghy.$spacer-double;
+  text-align: center;
+  color: white;
+  @keyframes zoom {
+    0% {
+      background-size: 120% 120%;
+    }
+    100% {
+      background-size: 100% 100%;
+    }
+  }
+  animation: zoom 20s infinite alternate linear;
+
+  &__text {
+    font-size: 50px;
+    margin: 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: #f5cd4f;
+    }
+  }
+
+  &__box {
+    background-color: rgba(0, 0, 0, 0.448);
+    height: 240px;
+    width: 240px;
+    margin: typograpghy.$spacer-double auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+
+    &:hover {
+      border: 1px solid #f5cd4f;
+      box-shadow: 0 0 1rem #f5cd4f;
+      transform: scale(1.1);
+    }
+  }
+
+  &__year {
+    font-size: 46px;
+  }
+
+  @media screen and (min-width: 640px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    &__text {
+      flex-basis: 100%;
+      font-size: 60px;
+    }
+
+    &__box {
+      margin: typograpghy.$spacer-double typograpghy.$spacer-double 0
+        typograpghy.$spacer-double;
+    }
+
+    &__year {
+      font-size: 60px;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    &__text {
+      font-size: 70px;
+      margin-top: typograpghy.$spacer-double;
+    }
+
+    &__year {
+      font-size: 60px;
+    }
+  }
+}
