@@ -1,1 +1,15 @@
-@use '../base/typograpghy';
+@use '../base/typography';
+
+.footer {
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.448);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: typography.$spacer typography.$spacer-double typography.$spacer
+    typography.$spacer-double;
+  text-align: center;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+}

@@ -1,11 +1,15 @@
-@use 'base/typograpghy';
+@use 'base/typography';
+@use 'pages/year2050';
+@use 'pages/year2022';
+@use 'layout/footer.scss';
 
 .introduction {
   min-height: 100vh;
   background-image: url(../images/fireworks.jpg);
   background-repeat: no-repeat;
   background-position: center top;
-  padding: typograpghy.$spacer-double;
+  padding: typography.$spacer-double;
+  padding-bottom: 120px;
   text-align: center;
   color: white;
   @keyframes zoom {
@@ -36,11 +40,11 @@
     background-color: rgba(0, 0, 0, 0.448);
     height: 240px;
     width: 240px;
-    margin: typograpghy.$spacer-double auto 0 auto;
+    margin: typography.$spacer-double auto 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: typography.$picture-radius;
     transition: transform 0.5s ease;
 
     &:hover {
@@ -66,8 +70,8 @@
     }
 
     &__box {
-      margin: typograpghy.$spacer-double typograpghy.$spacer-double 0
-        typograpghy.$spacer-double;
+      margin: typography.$spacer-double typography.$spacer-double 0
+        typography.$spacer-double;
     }
 
     &__year {
@@ -78,7 +82,7 @@
   @media screen and (min-width: 1000px) {
     &__text {
       font-size: 70px;
-      margin-top: typograpghy.$spacer-double;
+      margin-top: typography.$spacer-double;
     }
 
     &__year {

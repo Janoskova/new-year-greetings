@@ -11,6 +11,154 @@ html {
 body {
   margin: 0;
   font-family: "Qwitcher Grypen", cursive;
+  position: relative;
+}
+
+.city {
+  min-height: 100vh;
+  background-image: url(../images/city.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+.city__text {
+  margin: 0;
+  padding: 40px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.city__picture {
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-bottom: 120px;
+}
+.city__man {
+  border-radius: 10px;
+  max-width: 100%;
+  vertical-align: bottom;
+}
+@media screen and (min-width: 640px) {
+  .city {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .city__text {
+    flex-basis: 60%;
+  }
+  .city__picture {
+    flex-basis: 40%;
+    padding-top: 40px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .city__text {
+    font-size: 30px;
+  }
+}
+
+.sky {
+  min-height: 100vh;
+  background-color: #010333;
+  color: white;
+  padding: 40px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sky__box {
+  background-color: #010333;
+  border: 1px solid #f5cd4f;
+  box-shadow: 0 0 1rem #f5cd4f;
+  width: 240px;
+  height: 240px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+.sky__text {
+  margin: 0;
+  font-size: 35px;
+  text-align: center;
+}
+.sky__star {
+  position: absolute;
+  -webkit-animation: shining 7s ease-in-out infinite;
+          animation: shining 7s ease-in-out infinite;
+}
+@-webkit-keyframes shining {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes shining {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 640px) {
+  .sky__box {
+    width: 480px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sky__text {
+    font-size: 65px;
+  }
+}
+
+.footer {
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.448);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 40px 20px 40px;
+  text-align: center;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
 }
 
 .introduction {
@@ -19,6 +167,7 @@ body {
   background-repeat: no-repeat;
   background-position: center top;
   padding: 40px;
+  padding-bottom: 120px;
   text-align: center;
   color: white;
   -webkit-animation: zoom 20s infinite alternate linear;

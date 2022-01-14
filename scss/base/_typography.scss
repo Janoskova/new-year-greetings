@@ -11,7 +11,9 @@ html {
 body {
   margin: 0;
   font-family: 'Qwitcher Grypen', cursive;
+  position: relative;
 }
 
 $spacer: 20px;
 $spacer-double: 40px;
+$picture-radius: 10px;

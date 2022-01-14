@@ -1,0 +1,24 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Qwitcher Grypen", cursive;
+}
+
+.city {
+  min-height: 100vh;
+  background-image: url(../images/city.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding: 40px;
+  text-align: center;
+  color: white;
+}/*# sourceMappingURL=year2050.css.map */
