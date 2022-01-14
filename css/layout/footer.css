@@ -25,4 +25,12 @@ body {
   color: white;
   font-family: "Roboto Mono", monospace;
   font-size: 16px;
+}
+.footer__text {
+  margin: 0;
+  font-size: 14px;
+}
+.footer__link {
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=footer.css.map */
